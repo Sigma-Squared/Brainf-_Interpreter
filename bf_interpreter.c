@@ -28,8 +28,7 @@ void run(char* prog, long len) {
     char* ptr = progmem;
     uint pc = 0;
     while (1) {
-        char c = prog[pc];
-        switch(c) {
+        switch(prog[pc]) {
             case '>': ++ptr; break;
             case '<': --ptr; break;
             case '+': ++*ptr; break;
